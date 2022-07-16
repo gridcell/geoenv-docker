@@ -24,6 +24,7 @@ RUN apt install -y \
     python3-gdal \
     python3-numpy \
     python3-cartopy \
+    postgresql-client \
     make
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
@@ -70,4 +71,5 @@ RUN pip install --no-cache-dir \
     pytest \
     black \
     isort \
-    flake8
+    flake8 \
+    psycopg2
