@@ -1,6 +1,7 @@
 FROM ubuntu:jammy
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV HOST=host.docker.internal
 
 RUN apt update && apt upgrade -y
 
